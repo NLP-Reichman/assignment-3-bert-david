@@ -1,1 +1,12 @@
-{}
+{
+  "test_link": "NameError(\"name 'NOTEBOOK_LINK' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 6, in test_link\n    'link': NOTEBOOK_LINK\n            ^^^^^^^^^^^^^\nNameError: name 'NOTEBOOK_LINK' is not defined\n",
+  "test_read_data": {
+    "lengths": [
+      1750,
+      250,
+      500
+    ]
+  },
+  "test_prepare_data": "IndexError('too many indices for tensor of dimension 2')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 24, in test_prepare_data\n    'dev_texts_shape': dev_sequences[\"texts\"][\"input_ids\"].shape,\n                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: too many indices for tensor of dimension 2\n",
+  "test_model": "NameError(\"name 'train_model' is not defined\")\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_5529/1579568773.py\", line 39, in test_model\n    trainer = train_model(model, N_EPOCHS, BATCH_SIZE, train_ds, dev_ds)\n              ^^^^^^^^^^^\nNameError: name 'train_model' is not defined. Did you mean: 'load_model'?\n"
+}
