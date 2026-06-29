@@ -11,7 +11,7 @@
   },
   "test_prepare_data": "IndexError('too many indices for tensor of dimension 2')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_859/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_859/1579568773.py\", line 24, in test_prepare_data\n    'dev_texts_shape': dev_sequences[\"texts\"][\"input_ids\"].shape,\n                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: too many indices for tensor of dimension 2\n",
   "test_model": {
-    "f1": 0.9825799749497367,
-    "f1_wo_o": 0.9450728208809035
+    "f1": 0.9852695975280309,
+    "f1_wo_o": 0.9529684527228115
   }
 }
