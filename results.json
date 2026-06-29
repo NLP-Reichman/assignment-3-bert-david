@@ -12,12 +12,15 @@
   "test_prepare_data": {
     "dev_texts_shape": [
       250,
-      61
+      128
     ],
     "train_labels_shape": [
       1750,
-      61
+      128
     ]
   },
-  "test_model": "ValueError('The train_dataset does not implement __len__, max_steps has to be specified. The number of steps needs to be known in advance for the learning rate scheduler.')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_859/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_859/1579568773.py\", line 39, in test_model\n    trainer = train_model(model, N_EPOCHS, BATCH_SIZE, train_ds, dev_ds)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_859/2799649052.py\", line 30, in train_model\n    trainer = Trainer(\n              ^^^^^^^^\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/trainer.py\", line 556, in __init__\n    self._validate_args()\n  File \"/usr/local/lib/python3.12/dist-packages/transformers/trainer.py\", line 691, in _validate_args\n    raise ValueError(\nValueError: The train_dataset does not implement __len__, max_steps has to be specified. The number of steps needs to be known in advance for the learning rate scheduler.\n"
+  "test_model": {
+    "f1": 0.9835632197421895,
+    "f1_wo_o": 0.9501764847237337
+  }
 }
